@@ -1,0 +1,20 @@
+{{!< default}}
+
+{{#foreach posts}}
+<article class="{{post_class}}">
+	<header class="post-meta">
+		<h1><a href="{{url}}">{{title}}</a></h1>
+		<time pubdate datetime="{{date format="DD MMMM YYYY, HH:MM"}}">{{date format="DD MMMM YYYY, HH:MM"}}</time>
+		{{#if tags}}<div class="tags"><i class="fa fa-tags"></i> {{tags}}</div>{{/if}}
+	</header>
+	<div class="post-content">
+		{{content}}
+	</div>
+	<div class="post-menu text-right">
+		<a href="{{url}}#disqus_thread" class="btn btn-link btn-xs">Нет комментариев</a>
+		<a href="{{url}}" class="btn btn-default btn-xs">Читать дальше</a>
+	</div>
+</article>
+{{/foreach}}
+
+{{pagination}}

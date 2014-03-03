@@ -1,0 +1,71 @@
+.social-likes {
+	margin: 20px 0px;
+}
+.social-likes__widget {
+	display: inline-block;
+	background: #EBEBEB;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.social-likes__widget_facebook:hover {
+	background: #3d5b95;
+	color: #FFFFFF !important;
+}
+.social-likes__widget_twitter:hover {
+	background: #24aadd;
+	color: #FFFFFF !important;
+}
+.social-likes__widget_vkontakte:hover {
+	background: #587e9f;
+	color: #FFFFFF !important;
+}
+.social-likes__widget_plusone:hover {
+	background: #d23e30;
+	color: #FFFFFF !important;
+}
+
+.social-likes__icon {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right: 3px;
+}
+.social-likes__icon_facebook:before {
+	content: "\f082";
+	color: #3d5b95;
+}
+.social-likes__icon_twitter:before {
+	content: "\f099";
+	color: #24aadd;
+}
+.social-likes__icon_vkontakte:before {
+	content: "\f189";
+	color: #587e9f;
+}
+.social-likes__icon_plusone:before {
+	content: "\f0d4";
+	color: #d23e30;
+}
+.social-likes__widget:hover .social-likes__button .social-likes__icon_facebook:before,
+.social-likes__widget:hover .social-likes__button .social-likes__icon_twitter:before,
+.social-likes__widget:hover .social-likes__button .social-likes__icon_vkontakte:before,
+.social-likes__widget:hover .social-likes__button .social-likes__icon_plusone:before {
+	color: #FFFFFF !important;
+}
+
+.social-likes__counter {
+	margin-left: 3px;
+	background: #E96E71;
+	min-width: 30px;
+	padding: 0px 5px;
+	text-align: center;
+	color: #fff;
+	font-size: 0.8em;
+}
+.social-likes__counter_empty {
+	display: none;
+}

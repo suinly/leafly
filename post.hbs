@@ -1,0 +1,35 @@
+{{!< default}}
+
+{{#post}}
+<article class="{{post_class}}">
+	<header class="post-meta">
+		<h1>{{title}}</h1>
+		<time pubdate datetime="{{date format="DD MMMM YYYY, HH:MM"}}">{{date format="DD MMMM YYYY, HH:MM"}}</time>
+		{{#if tags}}<div class="tags"><i class="fa fa-tags"></i> {{tags}}</div>{{/if}}
+	</header>
+	<div class="post-content">
+		{{content}}
+	</div>
+</article>
+{{/post}}
+
+<div class="social-likes">
+	<div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+	<div class="twitter" data-via="freecodingme" data-related="freecodingme" title="Поделиться ссылкой в Твиттере">Twitter</div>
+	<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+	<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+</div>
+<div id="disqus_thread" style="margin-top: 10px;"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'suinly'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Чтобы комментировать, включите Javascript</noscript>
+
